@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -44,21 +45,18 @@ h2{
     text-decoration: underline;
 }
 section{
-    padding: 2rem 1rem;
-    background-color: #cffdcf;
-    max-width: 1100px;
-    margin: 0 auto;
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 50%;
+    display: flex;
     flex-wrap: wrap;
-
+    gap:20px;
+    justify-content: space-between;
+    padding: 10px;
 }
-
-.ligne{
-    width: 1px;
-    background-color: #a5a3a3;
+.parties{
+    background-color: #cffdcf;
+    padding: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;  
+    width: 49%;
 }
 footer{
     background-color: #eaeaea;

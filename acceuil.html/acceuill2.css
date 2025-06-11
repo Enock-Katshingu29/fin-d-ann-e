@@ -1,17 +1,12 @@
 *{
     padding: 0;
     margin: 0;
-}
-body{
     font-family:Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    
 }
+
 .blog{
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     width: 100%;
     background : #fff;
     padding: 20px 5px;
@@ -25,7 +20,6 @@ nav a{
     padding: 0 15px;
 }
 nav a:hover{
-    text-decoration: none;
     color: #040404;  
 }
 .logo{
@@ -112,7 +106,7 @@ input{
     padding: 30px;
     margin: 4px;
     border-radius: 10px;
-    border: #3a983a;
+    border: none;
 }
 button{
     width: 110px;
