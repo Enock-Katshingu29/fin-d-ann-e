@@ -7,8 +7,7 @@ body{
     line-height: 1.6;
     padding: 110Px 0;
     background-color: #cffdcf;
-    flex-direction: column;
-    
+    flex-direction: column;  
 }
 .blog{
     position:fixed;
@@ -17,8 +16,7 @@ body{
     right: 0;
     width: 100%;
     background: #fff;
-    padding: 20px 5px;
-    
+    padding: 20px 5px;  
 }
 nav{
     float: right; 
