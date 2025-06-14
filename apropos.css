@@ -1,19 +1,15 @@
 *{
     padding: 0;
     margin: 0;
-}
-body{
     font-family:Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
 .blog{
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
     width: 100%;
     background: #f9f9f9;
-    padding: 20px 5px;
+    padding: 17px 5px;
 }
 nav{
     float: right; 
@@ -21,7 +17,7 @@ nav{
 nav a{
     text-decoration: none;
     color: #b4b2b2; 
-    padding: 0 15px;
+    padding:15px;
 }
 nav a:hover{
     text-decoration: none;
@@ -30,32 +26,24 @@ nav a:hover{
 .logo{
     float: left;
 }
-.faq{
-    padding: 2rem 1rem;
+.propos{
+    padding: 3rem 5rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.3rem;
     background-color:#f9f9f9 ;
-    max-width: 800px;
+    max-width:800px;
     margin:auto;
     margin-top: 100px;
-    margin-bottom: 120px;
-
+    margin-bottom: 60px;
 }
-.faq h2{
+.propos h2{
     text-align: center;
-    text-decoration: underline;
+    text-decoration:underline;
 }
-
-section{
-    padding: 2rem 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    background-color:#f9f9f9 ;
-    flex-wrap: wrap;
-    max-width: 800px;
-    margin: 0 auto;
+.propos a{
+    text-decoration: none;
+    color: #2f962f;  
 }
 footer{
     background-color: #eaeaea;
@@ -66,9 +54,7 @@ footer{
 footer a{
     text-decoration: none;
     color:rgb(50, 48, 48);
-    margin: 0 1rem;
-    padding: 70px;
-    line-height: 4rem;
+    padding: 30px;
 }
 hr{
     margin: 20px;

@@ -107,6 +107,7 @@ input{
     margin: 4px;
     border-radius: 10px;
     border: none;
+    outline: none;
 }
 button{
     width: 110px;
