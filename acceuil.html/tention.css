@@ -9,11 +9,9 @@ body{
 .blog{
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
     width: 100%;
-    background: #fff;
-    padding: 20px 5px;
+    background: #f9f9f9;
+    padding: 17px 5px;
 }
 nav{
     float: right; 
@@ -21,7 +19,7 @@ nav{
 nav a{
     text-decoration: none;
     color: #b4b2b2; 
-    padding: 0 15px;
+    padding:15px;
 }
 nav a:hover{
     text-decoration: none;
@@ -30,7 +28,7 @@ nav a:hover{
 .logo{
     float: left;
 }
-header{
+.sante{
     max-width: 600px;
     margin: 0;
     background-color: #fff;
@@ -59,9 +57,7 @@ footer{
 footer a{
     text-decoration: none;
     color:rgb(50, 48, 48);
-    margin: 0 1rem;
-    padding: 70px;
-    line-height: 4rem;
+    padding: 30px;
 }
 hr{
     margin: 20px;
