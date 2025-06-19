@@ -31,17 +31,27 @@ nav a:hover{
 .sante{
     max-width: 600px;
     margin: 0;
-    background-color: #fff;
     padding: 3rem;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 section{
     padding: 4rem 2rem;
-    display: flex;
-    flex-direction: column;
     gap: 1.5rem;
     background-color: #cffdcf;
-    flex-wrap: wrap;
     max-width: 800px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.dedant{
+    padding: 4rem 2rem;
+    gap: 1.5rem;
+    background-color:#2f962f;
+    max-width: 400px;
     margin: 0 auto;
     border-radius: 20px;
 }

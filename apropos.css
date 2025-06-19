@@ -4,6 +4,9 @@
     font-family:Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
+body{
+    background: #cffdcf;
+}
 .blog{
     position: fixed;
     top: 0;
@@ -32,6 +35,7 @@ nav a:hover{
     flex-direction: column;
     gap: 1.3rem;
     background-color:#f9f9f9 ;
+    border-radius: 20px;
     max-width:800px;
     margin:auto;
     margin-top: 100px;
