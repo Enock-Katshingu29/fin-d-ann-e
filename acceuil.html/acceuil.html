@@ -12,11 +12,19 @@
         <div class="logo">
             <h4><strong>Tension Zen.</strong></h4>
         </div>
-        <nav>
+        <button class="hamburger" id="humburger        # ID de ta communauté principale
+        ID_COMMUNAUTE = 1
+        
+        def inscription_utilisateur(nom, email, mot_de_passe):
+            utilisateur = creer_utilisateur(nom, email, mot_de_passe)
+            associer_utilisateur_a_communaute(utilisateur.id, ID_COMMUNAUTE)
+            return utilisateur"><span>&#9776;</span></button>
+        <nav id="menu" >
             <a href="acceuil.html">Acceuil</a>
             <a href="../apropos.html"> A propos</a>
+            <a href="prévention-traitement.html"> La tension</a>
             <a href="tension.html">L'hypertention</a>
-            <a href="prévention-traitement.html">Prévention et Guerison</a>
+            <a href="../hypotention.html">L'hypotension</a>
             <a href="rejoindre.html"> Contact</a>
         </nav>
     </header>
@@ -91,14 +99,15 @@
             </div>
             <div class="link">
                 <h3>Mes Liens</h3>
-                <a href="#"><img src="https://upload.wikipedia.org/wikipedia/commons/8/82/facebook_icon.jpg" alt="facebook_icon"></a>
-                <a href="#"><img src="https://upload.wikipedia.org/wikipedia/commons/8/82/facebook_icon.jpg" alt="instagram_icon"></a>
-                <a href="#"><img src="https://upload.wikipedia.org/wikipedia/commons/8/82/facebook_icon.jpg" alt="wahtsapp_icon"></a>
-                <a href="#"><img src="https://upload.wikipedia.org/wikipedia/commons/8/82/facebook_icon.jpg" alt="appel_icon"></a>
+                <a href="#"><img alt="facebook_icon"></a>
+                <a href="#"><img alt="instagram_icon"></a>
+                <a href="#"><img alt="wahtsapp_icon"></a>
+                <a href="#"><img alt="appel_icon"></a>
             </div>
         </div>
         <hr>
         <div class="pied">&copy; 2025 Hypertention et prévention. tous les droits réservés.</div>
     </footer>
+    
 </body>
 </html>

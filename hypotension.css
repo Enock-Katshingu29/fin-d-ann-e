@@ -50,11 +50,12 @@ section{
     margin: 0 auto;
     border-radius: 20px;
 }
-.dedant{
-    padding: 4rem 2rem;
-    gap: 1.5rem;
-    background-color:#2f962f;
-    max-width: 400px;
-    margin: 0 auto;
-    border-radius: 20px;
+.toggle-btn {
+    margin-top: 10px;
+    background:#2f962f;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
 }

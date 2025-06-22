@@ -55,6 +55,9 @@ section{
     margin: 0 auto;
     border-radius: 20px;
 }
+.dedant h3{
+    color:#cffdcf;
+}
 h3{
     color:  #2f962f;
 }

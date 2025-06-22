@@ -4,12 +4,18 @@
     font-family:Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
-.blog{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #f9f9f9;
-    padding: 17px 5px;
+header.blog {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 20px;
+    height: 70px;
+    background: #fff;
+}
+
+.logo {
+    flex: 1;
 }
 nav{
     float: right; 
@@ -23,9 +29,24 @@ nav a:hover{
     text-decoration: none;
     color: #040404;  
 }
-.logo{
-    float: left;
+.hamburger {
+    display: none;
+    font-size: 2.2rem;
+    background: none;
+    border: none;
+    color: #2d2d2d; /* adapte la couleur à ton thème */
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 1px;
+    z-index: 200;
+    transition: color 0.2s;
 }
+
+.hamburger span {
+    font-size: 2.2rem;
+}
+
 main{
     background-color: #cffdcf;
     padding: 2rem 1rem;
@@ -134,9 +155,7 @@ button{
     cursor: pointer;
     margin: 10px;
 }
-button:hover{
-    color: #fff;
-}
+
 footer{
     color:black;
     padding : 2rem 1rem;
@@ -174,5 +193,28 @@ hr{
     .content{
         grid-template-columns: 1fr;
         gap: 2rem;
+        
     }
+}
+@media (max-width:529px) {
+    .content img{
+        width:310px ;
+        height: 310px;
+    }
+    
+}
+@media (max-width: 800px) {
+    nav a {
+        display: none;
+        flex-direction:column;
+        position: absolute;
+        color: black;
+    }
+
+}
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
 }
