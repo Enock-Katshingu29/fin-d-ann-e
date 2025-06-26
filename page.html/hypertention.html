@@ -3,20 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../acceuil.html/tention.css" type="text/css">
-    <title>tention</title>
+    <link rel="stylesheet" href="../css/hypertension.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>L'hypertention</title>
 </head>
 <body>
     <header class="blog">
         <div class="logo">
             <h4><strong>Tension Zen.</strong></h4>
         </div>
-        <nav>
-            <a href="acceuil.html">Acceuil</a>
-            <a href="../apropos.html"> A propos</a>
-            <a href="tension.html">L'hypertention</a>
-            <a href="prévention-traitement.html">Prévention et Guerison</a>
-            <a href="rejoindre.html"> Contact</a>
+        <nav class="respon">
+            <a href="#" onclick=ferme()><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#111"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+            <a href="../page.html/acceuil.html">Acceuil</a>
+            <a href="../page.html/apropos.html"> A propos</a>
+            <a href="../page.html/tension.html"> La tension</a>
+            <a href="../page.html/hypertention.html">L'hypertention</a>
+            <a href="../page.html/hypotention.html">L'hypotension</a>
+            <a href="../page.html/contact.html"> Contact</a>
+        </nav>
+        <nav >
+            <a class="afbar" href="../page.html/acceuil.html">Acceuil</a>
+            <a class="afbar" href="../page.html/apropos.html"> A propos</a>
+            <a class="afbar" href="../page.html/tension.html"> La tension</a>
+            <a class="afbar" href="../page.html/hypertention.html">L'hypertention</a>
+            <a class="afbar" href="../page.html/hypotention.html">L'hypotension</a>
+            <a class="afbar" href="../page.html/contact.html"> Contact</a>
+            <a href="#" class="menu" onclick=ouvrie()><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#111"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
         </nav>
     </header>
     <br>
@@ -27,8 +39,8 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur facere quo dignissimos atque, odit veniam porro ullam officiis sit soluta!</p>
     </div>
     <main>
-        <section>
-           <div class="debut">
+        <section class="motif">
+            <button class="racourcie" onclick="racourcie(this)">Allonger</button>
             <h2>Qu’est-ce que l’hypertension ?</h2>
             <p>On parle d'hypertension artérielle à partir de 140 mmHG en pression systolique 
                 et de 90 mmHg en pression diastolique. Il existe 3 stades d’hypertension : 
@@ -78,8 +90,8 @@
                 <li>insuffisance rénale</li>
               </ul>  
         </section>
-        <section>
-           <div class="debut">
+        <section class="motif">
+            <button class="racourcie" onclick="racourcie(this)">Allonger</button>
             <h3>Hypertension secondaire </h3>
             <p>
                 Dans certains cas, l’hypertension est consécutive à un problème d’ordre médical : maladie rénale, 
@@ -105,8 +117,8 @@
                 Ce type d’hypertension se corrige en traitant le problème sous-jacent. Une fois la pathologie traitée, les valeurs reviennent à la normale.
             </p>
         </section>
-        <section>
-           <div class="debut">
+        <section class="motif">
+            <button class="racourcie" onclick="racourcie(this)">Allonger</button>
             <h3>L’hypertension essentiel</h3>
             <p>aucune cause connue n'explique son apparition, mais elle est favorisée 
                 par des facteurs de risque.Ceci explique que 80% des hypertendus sont âgés 
@@ -131,78 +143,104 @@
                 dont l’hygiène de vie est satisfaisante, l’hypertension artérielle est la maladie chronique 
                 la plus fréquente en France (près de 17 millions de sujets sont concernés en 2022 en France).
             </p>
-            <div class="dedant">
-                <h3>Hypertension et Hérédité </h3>
-                <p>On a raison mais cette hérédité ça veut plutôt dire qu’il y a des familles dans lesquelles
+        </section>
+        <section class="motif">
+            <button class="racourcie" onclick="racourcie(this)">Allonger</button>
+            <h3>Hypertension et Hérédité </h3>
+            <p>On a raison mais cette hérédité ça veut plutôt dire qu’il y a des familles dans lesquelles
                 l’hypertension artérielle se retrouve de parent à enfant. Et cette hypertension artérielle 
                 très souvent appelé hypertension familiale par des chercheurs médecin est facile à reconnaître : 
                 si votre père ou votre mère a été soigné(e) contre l’hypertension artérielle avant l’âge de 50 ans 
                 et que vous-même vous avez moins de 50 ans et que vous avez une hypertension : il y a une très 
                 forte probabilité que cette hypertension soit d’origine héréditaire.
-                </p>
-                <p>Il y a des endroits du monde où il y a beaucoup plus de familles avec de l’hypertension artérielle 
+            </p>
+            <p>Il y a des endroits du monde où il y a beaucoup plus de familles avec de l’hypertension artérielle 
                 que d’autres. les familles d’hypertendus sont plus fréquentes et on voit dans ces familles malheureusement 
                 des complications précoces de l’hypertension : accident vasculaire cérébral, maladies cardiaques… et il y a 
                 une espèce de malédiction : les gens meurent tôt et les gens meurent tôt de ces maladies-là. Si dans votre famille, 
                 il y a eu un accident vasculaire cérébral précoce : rechercher une hypertension artérielle est logique parce que 
                 l’hypertension artérielle est la première raison d’avoir un accident vasculaire cérébral avant l’âge de 60 ans.
-                </p>  
-                <p>L’hypertension héréditaire est importante à prendre en compte. En France, c’est à peu près 15 % des hypertensions 
+            </p>  
+            <p>L’hypertension héréditaire est importante à prendre en compte. En France, c’est à peu près 15 % des hypertensions 
                 qui sont héréditaires. Mais c’est 80 % des gens qui ont moins de 50 ans et qui sont hypertendus. Plus vous êtes jeune, 
                 plus vous avez des raisons que l’hypertension soit d’origine héréditaire ou familiale.Si vous avez 80 ans et que vous 
                 êtes hypertendu, ce n’est plus important l’hérédité, c’est une autre cause de l’hypertension qui est liée au vieillissement 
                 des artères. Le vieillissement des artères, dans un pays comme la France avec une démographie de gens âgés prédominants, est
                 la cause principale de l’hypertension.80 % des hypertendus soignés en France sont âgés de plus de 55 ans. L’hypertension 
                 est une maladie des gens qui n’ont pas une cause héréditaire de façon majoritaire.
-                </p>
-            </div>
-            <div class="dedant">
-                <h3>Hypertension et le cholestérol </h3>
-               <p>Le chiffre est estimé à 40% d’hypertendus souffrants aussi d’un taux de cholestérol élevé et là aussi la gros 
+            </p>
+            <br>
+            <h3>Hypertension et le cholestérol </h3>
+            <p>Le chiffre est estimé à 40% d’hypertendus souffrants aussi d’un taux de cholestérol élevé et là aussi la gros 
                     ventre vient refaire surface mais pas que .Car il y a aussi les amoureux de la nourriture comme la fromage, 
                     la charcuterie… Ce sont les facteurs qui peuvent favoriser l’obtention de ces deux maladies
-                </p>
-            </div>
-            <div class="dedant">
-                <h3>Hypertension et insuffisance cardiaque</h3>
-                <p>L’insuffisance cardiaque et l’une des conséquences de l’hypertension surtout  chez les patients ayant 
+            </p>
+            <br>
+            <h3>Hypertension et insuffisance cardiaque</h3>
+            <p>L’insuffisance cardiaque et l’une des conséquences de l’hypertension surtout  chez les patients ayant 
                     plus de 70 ans biens que l’insuffisance cardiaque n’a pas que l’hypertension comme cause le moyen 
                     le plus eficace pour régler ce problème est juste de faire baisse sa pression artériel 
-                </p> 
-            </div>
-            <div class="dedant">
-                <h3>Hypertention et stress</h3>
-                <p>Stress et hypertension sont deux noms très souvent associés car Lorsque l’on fait un radio-trottoir, 
+            </p>
+            <br>
+            <h3>Hypertention et stress</h3>
+            <p>Stress et hypertension sont deux noms très souvent associés car Lorsque l’on fait un radio-trottoir, 
                     on demande quelle est la cause de l’hypertension : « c’est le stress, je suis hypertendu parce que 
                     j’ai un travail difficile, parce que ça va mal dans la famille, parce que je suis dans une période stressée… ».
-                </p>
-                <p>Cette notion est fausse sur le plan de la physiologie de l’hypertension. Ce qui est vrai, c’est que quand on est stressé, 
+            </p>
+            <p>Cette notion est fausse sur le plan de la physiologie de l’hypertension. Ce qui est vrai, c’est que quand on est stressé, 
                     on augmente sa pression artérielle mais on va l’augmenter de façon ponctuelle pendant quelques minutes, éventuellement 
                     quelques dizaines de minutes. Dès que le stress n’est plus là, la pression artérielle revient à la normale.
-                </p>
-            </div>
-            <div class="dedant">
-                <h3>Hypertention et diabète </h3>
-                <p>L’hypertension et diabète sont deux maladies très liées .Certains docteurs ont le constat que 20% des patients 
-                    souffrants d’hypertension soufrent également du diabète et inversement 70% des personnes diabétiques soufrent 
-                    d’hypertension artériel 
-                </p>
-                <p>Ces deux maladies ont comme points de rencontre « le gros ventre » et pour son traitement des solutions 
-                    plutôt simple à savoir : l’activité physique et des habitudes de nutrition à changer 
-                </p>
-                <p>Ce sont là des mesures basique à entreprendre seul puis, l’avis d’un médecin est toujours recommandé </p>
-            </div>
+            </p>
+            <br>
+            <h3>Hypertention et diabète </h3>
+            <p>L’hypertension et diabète sont deux maladies très liées .Certains docteurs ont le constat que 20% des patients 
+                souffrants d’hypertension soufrent également du diabète et inversement 70% des personnes diabétiques soufrent 
+                d’hypertension artériel 
+            </p>
+            <p>Ces deux maladies ont comme points de rencontre « le gros ventre » et pour son traitement des solutions 
+                plutôt simple à savoir : l’activité physique et des habitudes de nutrition à changer 
+            </p>
+            <p>Ce sont là des mesures basique à entreprendre seul puis, l’avis d’un médecin est toujours recommandé </p>
         </section>
-    
     </main>
-    <br>
     <footer>
-        <a href="#"><img src="https://upload.wikipedia.org/wikipedia/commons/8/82/facebook_icon.jpg" alt="facebook_icon"></a>
-        <a href="#"><img src="https://upload.wikipedia.org/wikipedia/commons/8/82/facebook_icon.jpg" alt="instagram_icon"></a>
-        <a href="#"><img src="https://upload.wikipedia.org/wikipedia/commons/8/82/facebook_icon.jpg" alt="wahtsapp_icon"></a>
-        <a href="#"><img src="https://upload.wikipedia.org/wikipedia/commons/8/82/facebook_icon.jpg" alt="appel_icon"></a>
+        <div class="foot">
+            <div class="contact">
+                <h3>Contact</h3>
+                <p><i>+243 997 398 780</i></p>
+                <p><i>katshinguenoc@gamil.com</i></p>
+            </div>
+            <div class="link">
+                <h3>Mes Liens</h3>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
         <hr>
         <div class="pied">&copy; 2025 Hypertention et prévention. tous les droits réservés.</div>
     </footer>
+    <script>
+        function ouvrie() {
+            const nav = document.querySelector('.respon');
+            nav.style.display = 'flex'     
+        }
+        function ferme() {
+            const nav = document.querySelector('.respon');
+            nav.style.display = 'none';
+        }
+        // Fonction pour raccourcir ou allonger les sections
+        function racourcie(btn) {
+            const section = btn.parentElement;
+            if (section.classList.contains('motif')) {
+                section.classList.remove('motif');
+                btn.textContent = 'Raccourcir';
+            } else {
+                section.classList.add('motif');
+                btn.textContent = 'Allonger';
+            }
+        }
+    </script>
 </body>
 </html>

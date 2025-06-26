@@ -4,21 +4,14 @@
     font-family:Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
-header.blog {
+header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
-    padding: 0 20px;
-    height: 70px;
-    background: #fff;
-}
-
-.logo {
-    flex: 1;
-}
-nav{
-    float: right; 
+    position: fixed;
+    padding: 17px 5px;
+    background: #f9f9f9;;
+    width: 100%;
 }
 nav a{
     text-decoration: none;
@@ -27,31 +20,28 @@ nav a{
 }
 nav a:hover{
     text-decoration: none;
-    color: #040404;  
-}
-.hamburger {
+    color: #040404;
+    transition: 1.6s
+} 
+.respon{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
     display: none;
-    font-size: 2.2rem;
-    background: none;
-    border: none;
-    color: #2d2d2d; /* adapte la couleur à ton thème */
-    cursor: pointer;
-    position: absolute;
-    right: 20px;
-    top: 1px;
-    z-index: 200;
-    transition: color 0.2s;
+    backdrop-filter:blur(10px);
+    box-shadow: -10px 0 20px rgba(0, 0, 0, 0.1); 
+    flex-direction: column;
 }
-
-.hamburger span {
-    font-size: 2.2rem;
+.menu{
+    display: none;
 }
-
 main{
     background-color: #cffdcf;
     padding: 2rem 1rem;
     border-radius:0  0 0 50px;
-    padding-top:6em;
+    padding-top:100px;
 }
 main h1{
     font-size: 4rem;
@@ -155,12 +145,15 @@ button{
     cursor: pointer;
     margin: 10px;
 }
+button:hover{
+    color: #fff;
+}
 
 footer{
     color:black;
     padding : 2rem 1rem;
     text-align: center;
-    background:#cffdcf;
+    background-color: #cffdcf;
 }
 footer h3{
     color: #2f962f;
@@ -169,7 +162,6 @@ footer h3{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
-    max-width: 1200px;
     margin: 0 auto;
 }
 .contact{
@@ -179,9 +171,8 @@ footer h3{
 }
 .link a{
     text-decoration: none;
-    color:black;
-    display: flex;
-    justify-content: center;
+    color:#3a983a;
+    font-size:x-large;
 }
 hr{
     margin: 20px;
@@ -192,8 +183,7 @@ hr{
 @media (max-width: 1200px){
     .content{
         grid-template-columns: 1fr;
-        gap: 2rem;
-        
+        gap: 2rem;  
     }
 }
 @media (max-width:529px) {
@@ -204,17 +194,15 @@ hr{
     
 }
 @media (max-width: 800px) {
-    nav a {
-        display: none;
-        flex-direction:column;
-        position: absolute;
-        color: black;
-    }
-
-}
-@media (max-width: 768px) {
-    .hamburger {
+    .menu{
         display: block;
     }
-
+    .afbar{
+        display: none;
+    }    
+}
+@media(max-width: 400px) {
+    .respon{
+        width: 100%;
+    }
 }

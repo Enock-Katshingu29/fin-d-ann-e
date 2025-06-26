@@ -3,20 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style-prétrai.css" type="text/css">
-    <title>prevguer</title>
+    <link rel="stylesheet" href="../css/tension.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>tension</title>
 </head>
 <body>
     <header class="blog">
         <div class="logo">
             <h4><strong>Tension Zen.</strong></h4>
         </div>
-        <nav>
-            <a href="acceuil.html">Acceuil</a>
-            <a href="../apropos.html"> A propos</a>
-            <a href="tension.html">L'hypertention</a>
-            <a href="prévention-traitement.html">Prévention et Guerison</a>
-            <a href="rejoindre.html"> Contact</a>
+        <nav class="respon">
+            <a href="#" onclick=ferme()><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#111"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+            <a href="../page.html/acceuil.html">Acceuil</a>
+            <a href="../page.html/apropos.html"> A propos</a>
+            <a href="../page.html/tension.html"> La tension</a>
+            <a href="../page.html/hypertention.html">L'hypertention</a>
+            <a href="../page.html/hypotention.html">L'hypotension</a>
+            <a href="../page.html/contact.html"> Contact</a>
+        </nav>
+        <nav >
+            <a class="afbar" href="../page.html/acceuil.html">Acceuil</a>
+            <a class="afbar" href="../page.html/apropos.html"> A propos</a>
+            <a class="afbar" href="../page.html/tension.html"> La tension</a>
+            <a class="afbar" href="../page.html/hypertention.html">L'hypertention</a>
+            <a class="afbar" href="../page.html/hypotention.html">L'hypotension</a>
+            <a class="afbar" href="../page.html/contact.html"> Contact</a>
+            <a href="#" class="menu" onclick=ouvrie()><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#111"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
         </nav>
     </header>
     <br>
@@ -27,21 +39,25 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur facere quo dignissimos atque, odit veniam porro ullam officiis sit soluta!</p>
     </div>
     <main>
-        <section>
-           <h2>C'est quoi la Tension ?</h2>
+        <section class="modif">
+            <button class="racourcie" onclick="racourcie(this)">Allonger</button>
+            <h2>C'est quoi la Tension ?</h2>
             <p>Le mots Tension est connue pour avoir plusieurs sens dans notre vie de tous les jours. Dans certains cas il prend la signification de stress,
                 dans d’autre le sens de concentration et dans d’autre encore le sens de crispation et pour les plus jeunes ou même ceux qui se souviennent 
                 encore on l’a plusieurs fois entendus en Physique, Chimique, Électricité, etc…
             </p>
+            <br>
             <p>Mais ne vous en faites pas je ne vais vous faire revivre des souvenir nostalgique ou cauchemardesque c’est juste un préambule. Dans notre cas,
                 nous parlons de la tension comme le reflet de la pression du sang dans les artères ces derniers sont des tuyaux qui conduisent le sang du cœur 
                 vert les organes. 
             </p>
+            <br>
             <p>Pour faire circuler le sang dans les artères, le cœur agit comme une pompe et provoque à chaque battement une augmentation de la pression artérielle
                 dans les vaisseaux. L’enregistrement de la pression à la sortie du cœur est noté entre deux valeurs extrêmes qui se traduisent par 2 chiffres 
                 indiqués par le tensiomètre. Une tension artérielle élevée, ou hypertension artérielle (HTA), peut avoir des conséquences graves sur la santé, 
                 tandis qu'une tension trop basse (hypotension) peut également causer des problèmes. 
             </p>
+            <br>
             <h3>Pourquoi la tension est-elle variable ?</h3>
             <p>La tension artérielle, varie selon l’activité physique et/ou les contraintes psychologiques. La tension artérielle est basse pendant le sommeil et 
                 s’élève lors d’une activité physique ou d’un stress psychologique. Par convention, c’est la tension artérielle mesurée au repos qui permet de définir 
@@ -51,12 +67,14 @@
                 d’hypertension artérielle.
             </p>
         </section>
-        <section>
+        <section class="modif">
+            <button class="racourcie" onclick="racourcie(this)">Allonger</button>
            <h2>Comment mesure-t-on la tension ?</h2>
            <p>Les artères peuvent être comparées à des tuyaux d’arrosage. Pour savoir s’il y a un peu ou beaucoup de pression à l’intérieur d’un tuyau, 
                 une solution consiste à appuyer dessus. S’il s'aplatit facilement, cela signifie que la pression est faible. Si vous devez appuyer plus fort,
                 cela signifie que la pression est élevée. C’est sur ce principe que l’on mesure la tension artérielle.
             </p>
+            <br>
             <p>En règle générale, le médecin place un brassard autour du bras au niveau d’une artère. Il augmente ensuite petit à petit la pression 
                 dans le brassard jusqu'à appuyer suffisamment sur l’artère pour que le sang ne circule plus, avant de le dégonfler. L’obstruction mécanique générée 
                 par la pression du brassard gêne l’écoulement du sang. Lorsque la pression est lentement relâchée, le sang peut à nouveau circuler et il se produit 
@@ -64,40 +82,45 @@
                 le médecin va écouter ces sons : le premier qu’il entend correspond à la pression artérielle systolique (bruit de la systole), le dernier son entendu 
                 correspond à la pression artérielle diastolique (bruit de la diastole).
             </p>
+            <br>
             <p>Pression systolique : pression qui s’exerce lorsque le cœur se contracte et envoie le sang dans les artères. Elle représente la pression maximale du sang 
                 et correspond toujours au chiffre le plus élevé lors de votre prise de mesure. Par exemple, pour une tension artérielle évaluée à 135/85mmHg, le 135 
                 représente la pression systolique8.
             </p>
+            <br>
             <p>Pression diastolique : pression qui s’exerce lorsque le cœur se relâche pour se remplir à nouveau de sang. Elle représente la pression minimale du sang 
                 et correspond toujours au chiffre le plus bas lors de votre prise de mesure. Par exemple, pour une tension artérielle évaluée à 135/85mmHg, le 85 
                 représente la pression diastolique8.
                 <br>
                 La pression artérielle est exprimée en millimètres de mercure (mmHg). Lorsque l’on dit “12-8” ou “17-10", les valeurs sont exprimées en centimètre de mercure (cmHg). 
             </p>
+            <br>
             <p>Quand le cœur se contracte, il agit comme une pompe qui propulse le sang dans toutes les artères pour apporter énergie et oxygène à l’organisme. Le sang, ainsi mis 
                 en circulation, exerce une pression sur la paroi des artères. Cette pression ou tension artérielle peut être mesurée, et on l’exprime en millimètres de mercure (mmHg) 
                 ou en centimètres de mercure (cmHg).
                 <br>
             </p>
         </section>
-        <section>
+        <section class="modif">
+            <button class="racourcie" onclick="racourcie(this)">Allonger</button>
+            <h2>Bonne habitudes</h2>
             <p>En ce qui concerne les habitudes à avoir avant de prélever sa tension je vous le fait sous forme de listes :</p>
             <ol>
-                <li>30 min avant :</li>
+                <li><strong>30 min avant :</strong></li>
                 <ul>
                     <li>Ne pas fumer</li>
                     <li>Pas des boissons caféinée</li>
                     <li>Ne pas mesurer si vous n’êtes pas en bonne santé ou vous êtes angoissé </li>
                     <li>Prendre une douche si cela peut vous détendre</li>
                 </ul>
-                <li>5 min avant:</li>
+                <li><strong>5 min avant:</strong></li>
                 <ul>
                     <li>Eviter tous vêtements serré </li>
                     <li>Toujours mesuré dans le même bras</li>
                     <li>Poser son bras sur une table à la hauteur du cœur </li>
                     <li>S’asseoir calmement sur une chaise les pieds bien aplat au sol</li>
                 </ul>
-                <li>Pendant :</li>
+                <li><strong>Pendant :</strong></li>
                 <ul>
                     <li>Ne pas parler </li>
                     <li>Rester calme</li>
@@ -112,9 +135,47 @@
                 <li><strong>Pression diastolyque (DIA):</strong>  la pression l’lorsque le cœur se relâche, la pression est plus faible, mais pas nulle </li>
                 <li> <strong>Le battement par minutes(BPM):</strong>Une fréquence cardiaque entre 55 et 85 battements par minute3</li>
             </ul>
-            <p class="retient">le valeur du SYS et DIA sont : 140/90 mmHg au cabinet médical et 135/85 mmHg</p>
+            <p class="retient"><strong>le valeur du SYS et DIA sont : </strong>140/90 mmHg au cabinet médical et 135/85 mmHg</p>
         </section>
     
     </main>
-    
+    <footer>
+        <div class="foot">
+            <div class="contact">
+                <h3>Contact</h3>
+                <p><i>+243 997 398 780</i></p>
+                <p><i>katshinguenoc@gamil.com</i></p>
+            </div>
+            <div class="link">
+                <h3>Mes Liens</h3>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="pied">&copy; 2025 Hypertention et prévention. tous les droits réservés.</div>
+    </footer>
+    <script>
+        function ouvrie() {
+            const nav = document.querySelector('.respon');
+            nav.style.display = 'flex'     
+        }
+        function ferme() {
+            const nav = document.querySelector('.respon');
+            nav.style.display = 'none';
+        }
+        // Fonction pour raccourcir ou allonger les sections
+        function racourcie(btn) {
+            const section = btn.parentElement;
+            if (section.classList.contains('modif')) {
+                section.classList.remove('modif');
+                btn.textContent = 'Raccourcir';
+            } else {
+                section.classList.add('modif');
+                btn.textContent = 'Allonger';
+            }
+        }  
+    </script>
 </body>

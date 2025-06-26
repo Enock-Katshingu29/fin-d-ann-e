@@ -1,0 +1,140 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* la barre nav */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 17px 5px;
+    background: #f9f9f9;
+    width: 100%;
+}
+nav a{
+    text-decoration: none;
+    color: #b4b2b2; 
+    padding:15px;
+}
+nav a:hover{
+    text-decoration: none;
+    color: #040404;
+    transition: 2s;
+}
+
+/* menu hemburger */
+.respon{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    display: none;
+    backdrop-filter:blur(10px);
+    box-shadow: -10px 0 20px rgba(0, 0, 0, 0.1); 
+    flex-direction: column;
+}
+.menu{
+    display: none;
+}
+
+/* Tete de la page */
+.sante{
+    max-width: 600px;
+    margin: 0;
+    padding: 3rem;
+}
+.sante h3{
+    color:#3a983a;
+}
+
+/* les tableau */
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 2rem;
+    margin-bottom: 60px;
+}
+section{
+    padding: 2rem 3rem;
+    gap: 2rem;
+    background-color: #cffdcf;
+    max-width: 800px;
+    border-radius: 20px;
+}
+
+/* le mouvement de la page */
+section.modif{
+    max-height: 240px;
+    overflow: hidden;
+}
+.racourcie{
+    margin-top: 10px;
+    background:#2f962f;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* partie reserver au pied de page */
+footer{
+    color:black;
+    padding : 2rem 1rem;
+    text-align: center;
+    background-color: #cffdcf;
+}
+footer h3{
+    color: #2f962f;
+}
+.foot{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.link a{
+    text-decoration: none;
+    color:#3a983a;
+    font-size:x-large;
+    gap: 10px;
+}
+hr{
+    margin: 20px;
+}
+.pied{
+    color:black;
+}
+
+/* pour rendre responsive certaine partie */
+@media (max-width: 800px) {
+    .menu{
+        display: block;
+    }
+    .afbar{
+        display: none;
+    }    
+}
+@media(max-width: 400px) {
+    .respon{
+        width: 100%;
+    }    
+}
+@media(max-width:520px){
+    main{
+        grid-template-columns: 1fr; 
+    }
+}
