@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- la barre nav -->
     <header class="blog">
         <div class="logo">
             <h4><strong>Tension Zen.</strong></h4>
@@ -30,19 +31,22 @@
             <a class="afbar" href="../page.html/hypertention.html">L'hypertention</a>
             <a class="afbar" href="../page.html/hypotention.html">L'hypotension</a>
             <a class="afbar" href="../page.html/contact.html"> Contact</a>
-            <a href="#" class="menu" onclick=ouvrie()><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#111"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+            <a href="#" class="menu" onclick=ouvrir()><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#111"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
         </nav>
     </header>
+    <!-- ici c'est le corps de ma page -->
     <main>
         <h1> Bienvenue à Tension Zen</h1>
         <p>Découvrez les informations essentielles et des conseils pratique pour prévenir et gérer l'hypertention.</p>
         <div class="buttom">
-            <a href="../apropos.html">En savoir plus</a>
+            <a href="../page.html/apropos.html">En savoir plus</a>
         </div>
     </main>
     <section class="visible">
+    <!-- quelques définitions -->
         <div class="content">
             <div class="text">
+            
                 <h3>Comprendre l'hypertention</h3>
                 <h2>Agir pour votre santé</h2>
                 <p>Selon l'Organisation Mondiale de la Santé (OMS), la santé est définie comme "un état de complet
@@ -72,6 +76,7 @@
         </div>
     </section>
     <section>
+    <!-- j'ai fait des cartes -->
         <div class="cont">
             <div class="broche">
                 <img src="../nouriture.png" alt="">
@@ -91,18 +96,18 @@
             </div>
             <div class="broche">
                 <img src="../personne-stresse-2.jpg" alt="">
-                <li><strong>Activités physiques</strong>: <br> C’est l’une des habitudes si ce n’est la meilleure à
-                    avoir mais ne t’en fais pas tu n’as pas besoin d’être athlète l’importance est la régularité </li>
+                <li><strong>Eviter le stresse</strong>: <br> En ce qui conserne le stresse il est vrai qu'il modifie la tension et c'est pour ça qu'il est dangereux pour un hypertendue mais il  est impotant de pressiser qu'il ne peut pas rendre une personne hypertendue  </li>
             </div>
 
         </div>
     </section>
+    <!-- la partie inscription -->
     <div class="inscription">
         <h2>Rejoignez nous pour la prevention de l'hypertention</h2>
         <P><strong>Il y a une phrase que j'aime qui dit :</strong> A plusieurs on est meilleur,de ce fait rencontrez
-            plus des personnes ayant les memes interetque toi </P>
+            plus des personnes ayant les memes interet que toi </P>
         <br>
-        <form id="inscription">
+        <form>
             <input type="text" placeholder="pseudo" name="pseudo">
             <input type="email" placeholder="Email" name="email">
             <input type="password" placeholder="mot de passe" name="mdp">
@@ -110,9 +115,8 @@
             <button type="submit">soumetre</button>
         </form>
     </div>
-    <br>
-    <br>
     <footer>
+    <!-- le pied de page -->
         <div class="foot">
             <div class="contact">
                 <h3>Contact</h3>
@@ -128,10 +132,12 @@
             </div>
         </div>
         <hr>
-        <div class="pied">&copy; 2025 Hypertention et prévention. tous les droits réservés.</div>
+        <div class="pied">&copy; 2025 Tension Zen. tous les droits réservés.</div>
     </footer>
+    <!-- un peut de java script -->
     <script>
-        function ouvrie() {
+        // menu burger en un clic
+        function ouvrir() {
             const nav = document.querySelector('.respon');
             nav.style.display = 'flex'
         }
@@ -141,5 +147,4 @@
         }
     </script>
 </body>
-
 </html>

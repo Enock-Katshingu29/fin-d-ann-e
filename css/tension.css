@@ -15,17 +15,20 @@ header{
     padding: 17px 5px;
     background: #f9f9f9;;
     width: 100%;
+    top:0;
+    
 }
 nav a{
     text-decoration: none;
-    color: #b4b2b2; 
+    color:#111; 
     padding:15px;
 }
 nav a:hover{
     text-decoration: none;
-    color: #040404;
-    transition: 2s
+    color:#2f962f;
+    transition: 1s;
 } 
+
 /* menu hamburger */
 .respon{
     position: fixed;
@@ -34,20 +37,21 @@ nav a:hover{
     height: 100%;
     width: 250px;
     display: none;
-    backdrop-filter:blur(10px);
+    backdrop-filter:blur(20px);
     box-shadow: -10px 0 20px rgba(0, 0, 0, 0.1); 
     flex-direction: column;
 }
 .menu{
     display: none;
 }
+
 /* tete de page */
 .sante{
     max-width: 600px;
-    margin: 0;
     padding: 3rem;
+    margin-top:70px;
 }
-.sante h3{
+h3{
     color: #3a983a;
 }
 /* disposition des tableau */
@@ -64,6 +68,13 @@ section{
     max-width: 800px;
     border-radius: 20px;
 }
+section strong{
+    color: #2f962f;
+}
+ ul{
+    padding-left: 40px;
+}
+
 
 /* mouvement de la tableau */
 section.modif{
@@ -85,7 +96,6 @@ footer{
     padding : 2rem 1rem;
     text-align: center;
     background-color: #cffdcf;
-    bottom: 0;
 }
 footer h3{
     color: #2f962f;
@@ -94,25 +104,20 @@ footer h3{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 .contact{
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
 }
 .link a{
-    text-decoration: none;
     color:#3a983a;
     font-size:x-large;
 }
 hr{
     margin: 20px;
 }
-.pied{
-    color:black;
-}
+
+/* la responsive de la nav barre */
 @media (max-width: 800px) {
     .menu{
         display: block;
@@ -126,6 +131,8 @@ hr{
         width: 100%;
     }
 }
+
+/*la responsivité des tableaux*/
 @media(max-width:520px) {
     main{
         grid-template-columns:1fr;

@@ -4,25 +4,28 @@
     font-family:Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
+/* la barre nav */
 header{
     display: flex;
-    align-items: center;
     justify-content: space-between;
     position: fixed;
     padding: 17px 5px;
     background: #f9f9f9;;
     width: 100%;
+    align-items: center;
 }
 nav a{
     text-decoration: none;
-    color: #b4b2b2; 
+    color:#111; 
     padding:15px;
 }
 nav a:hover{
     text-decoration: none;
-    color: #040404;
-    transition: 1.6s
-} 
+    color:#2f962f;
+    transition: 1s;
+}
+
+ /*menu burger  */
 .respon{
     position: fixed;
     top: 0;
@@ -30,127 +33,41 @@ nav a:hover{
     height: 100%;
     width: 250px;
     display: none;
-    backdrop-filter:blur(10px);
+    backdrop-filter:blur(20px);
     box-shadow: -10px 0 20px rgba(0, 0, 0, 0.1); 
     flex-direction: column;
 }
 .menu{
     display: none;
 }
-main{
-    background-color: #cffdcf;
-    padding: 2rem 1rem;
-    border-radius:0  0 0 50px;
-    padding-top:100px;
-}
-main h1{
-    font-size: 4rem;
-    line-height:initial;
-}
-main p{
-    line-height:initial;
-    max-width: 500px;
-}
-.buttom{
-    margin-top: 1rem;
-}
-.buttom a{
-    display:inline-block;
-    margin: 0.8rem;
-    text-decoration: none;
-    padding: 10px;
-    color:white;
-    background-color: #3a983a;
+
+/* tout savoir sur le site */
+.propos{
+    margin: 60px auto;
+    padding: 2rem;
+    max-width: 1100px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
     border-radius: 20px;
-    gap:1.5rem;
 }
-.visible{
-    padding: 6rem 0;
-    background: white;
+.propos h2{
+    margin: 20px 0;
+    color: #3a983a;
+    font-size:2rem;
 }
-.content{
-    max-width: 1700px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10rem;
-    align-items: center;
-}
-.content h3{
-    color: #2f962f;
-}
-.content img{
-    border-radius: 20px;
-    box-shadow: 0px 10px 50px 10px #7e7e7e;
-}
-section{
-    margin: 0 auto;
-    max-width: 1500px;
-}
-.cont{
-    
-    padding: 0 2rem;
-    display:grid;
-    padding-bottom: 6rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-}
-.broche{
-    border-radius: 10px;
-    overflow: hidden;
-    background:#cffdcf;
-    box-shadow: 0px 5px 15px ;
-}
-.broche li{
-    padding: 6px;
-    text-decoration: none;
-}
-.broche strong{
-    color:#3a983a
-}
-.broche img{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-.inscription{
-    background-color: #cffdcf;
-    border-radius: 20px;
-    padding: 2rem 1rem;
-    max-width: 1500px;
+.propos p{
+    width: 70%;
     margin: auto;
-    text-align: center;
 }
-.inscription h2{
-    color: #2f962f;
-}
-input{
-    width: 40%;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    border: none;
-    outline: none;   
-}
-button{
-    width: 110px;
-    height: 40px;
-    border-radius: 10px;
-    border: none;
-    background-color:#2f962f;
-    color: #111;
-    font-size: 1.1em;
-    outline: none;
-    cursor: pointer;
-    margin: 10px;
-}
-button:hover{
-    color: #fff;
+.propos ul{
+    width: 70%;
+    margin: auto;
 }
 
+/* le pied de la page  */
 footer{
-    color:black;
     padding : 2rem 1rem;
     text-align: center;
     background-color: #cffdcf;
@@ -162,24 +79,20 @@ footer h3{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
-    margin: 0 auto;
 }
 .contact{
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
 }
 .link a{
-    text-decoration: none;
     color:#3a983a;
     font-size:x-large;
 }
 hr{
     margin: 20px;
 }
-.pied{
-    color:black;
-}
+
+/* la responsivité  nav barre et burger*/
 @media (max-width: 800px) {
     .menu{
         display: block;

@@ -1,11 +1,11 @@
 *{
     padding: 0;
     margin: 0;
-}
-body{
     font-family:Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
+
+/* barre nav */
 header{
     display: flex;
     align-items: center;
@@ -14,17 +14,21 @@ header{
     padding: 17px 5px;
     background: #f9f9f9;;
     width: 100%;
+    top: 0;
+    
 }
 nav a{
     text-decoration: none;
-    color: #b4b2b2; 
+    color:#111; 
     padding:15px;
 }
 nav a:hover{
     text-decoration: none;
-    color: #040404;
-    transition: 2s
-} 
+    color:#2f962f;
+    transition: 1s
+}
+
+/* burger en un clic */
 .respon{
     position: fixed;
     top: 0;
@@ -32,26 +36,31 @@ nav a:hover{
     height: 100%;
     width: 250px;
     display: none;
-    backdrop-filter:blur(10px);
+    backdrop-filter:blur(20px);
     box-shadow: -10px 0 20px rgba(0, 0, 0, 0.1); 
     flex-direction: column;
 }
 .menu{
     display: none;
 }
+
+/* préambule */
 .sante{
     max-width: 600px;
-    margin: 0;
     padding: 3rem;
+    margin-top:70px;
 }
-h3{
-    color:#2f962f;
+ h3{
+    color: #3a983a;
 }
+
+/* la forme dees tableaux */
 main{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 20px;
     padding: 20px;
+    margin-bottom: 60px;
 }
 section{
     padding: 3rem 2rem;
@@ -59,6 +68,14 @@ section{
     background-color: #cffdcf;
     border-radius: 20px;
 }
+section strong{
+    color: #2f962f;
+}
+ ul{
+    padding-left: 40px;
+}
+
+/* mouvement du tableau */
 section.motif{
     max-height: 180px;
     overflow: hidden;
@@ -86,16 +103,12 @@ footer h3{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 .contact{
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
 }
 .link a{
-    text-decoration: none;
     color:#3a983a;
     font-size:x-large;
 }
@@ -117,6 +130,7 @@ hr{
         width: 100%;
     }
 }
+/* responsive des tableaux */
 @media(max-width:520px) {
     main{
         grid-template-columns:1fr;

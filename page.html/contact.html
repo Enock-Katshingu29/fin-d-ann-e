@@ -30,29 +30,41 @@
             <a href="#" class="menu" onclick=ouvrie()><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#111"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
         </nav>
     </header>
+    <!-- formulaire -->
     <div class="con">
         <h1>NOUS CONTACTER</h1>
         <br>
-        <form>
-        <!--required sert à obligé l'insertion d"une donnéé-->
-            <input  required type="text" id="name " placeholder="inscrivez votre nom">
-            <input  required type="text" id="name " placeholder="inscrivez votre prénom">
-            <input required type="email" id="m" placeholder=" votre email SVP">
-            <input required type="tel" id="num" placeholder="entrée votre numéro">
+        <form id="envoie">
+            <input  type="text" id="nom" placeholder="votre nom">
+            <input type="text" id="prenom" placeholder="votre prénom">
+            <input  type="email" id="email" placeholder="votre email">
+            <input  type="tel" id="num" placeholder="votre numéro">
             <textarea name="message" placeholder="Une remarque ?"></textarea>
             <br>
             <button type="submit">Envoyer</button>
-        </form>    
+        </form>
+        <div id="message-envoie"></div> 
     </div>
     <script>
+        // burger en clic
         function ouvrie() {
             const nav = document.querySelector('.respon');
-            nav.style.display = 'flex'
+            nav.style.display = 'flex';
         }
         function ferme() {
             const nav = document.querySelector('.respon');
             nav.style.display = 'none';
         }
+         document.getElementById('envoie').addEventListener('submit', function(e) {
+        e.preventDefault(); // Empêche l'envoi classique du formulaire
+        const msg = document.getElementById('message-envoie');
+        msg.textContent = "Votre message a bien été envoyé !";
+        msg.style.display = "block";
+        this.reset();
+        setTimeout(() => {
+            msg.style.display = "none";
+        }, 4000);
+    });
     </script>
 </body>
 </html>
