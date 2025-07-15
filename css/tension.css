@@ -15,16 +15,14 @@ header{
     padding: 17px 5px;
     background: #f9f9f9;;
     width: 100%;
-    top:0;
-    
+    top:0;   
 }
 nav a{
     text-decoration: none;
     color:#111; 
-    padding:15px;
+    padding: 0 15px;
 }
 nav a:hover{
-    text-decoration: none;
     color:#2f962f;
     transition: 1s;
 } 
@@ -38,8 +36,11 @@ nav a:hover{
     width: 250px;
     display: none;
     backdrop-filter:blur(20px);
-    box-shadow: -10px 0 20px rgba(0, 0, 0, 0.1); 
+    box-shadow:20px rgba(0, 0, 0, 0.1); 
     flex-direction: column;
+}
+.respon a{
+    padding:15px;
 }
 .menu{
     display: none;
@@ -65,7 +66,6 @@ main{
 section{
     padding: 2rem 3rem;
     background-color: #cffdcf;
-    max-width: 800px;
     border-radius: 20px;
 }
 section strong{
@@ -104,10 +104,6 @@ footer h3{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
-}
-.contact{
-    display: flex;
-    flex-direction: column;
 }
 .link a{
     color:#3a983a;

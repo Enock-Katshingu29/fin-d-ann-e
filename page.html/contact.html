@@ -55,7 +55,8 @@
             const nav = document.querySelector('.respon');
             nav.style.display = 'none';
         }
-         document.getElementById('envoie').addEventListener('submit', function(e) {
+        
+        document.getElementById('envoie').addEventListener('submit', function(e) {
         e.preventDefault(); // Empêche l'envoi classique du formulaire
         const msg = document.getElementById('message-envoie');
         msg.textContent = "Votre message a bien été envoyé !";
